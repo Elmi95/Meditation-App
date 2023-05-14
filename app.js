@@ -6,7 +6,7 @@ const app = () =>{
 
 
     //Sounds
-    const sounds =document.querySelectorAll("sound-picker button")
+    const sounds =document.querySelectorAll(".sound-picker button")
     
     //Time Display
     const timeDisplay = document.querySelector(".time-display")
@@ -23,13 +23,13 @@ const app = () =>{
     outline.style.strokeDashoffset = outlineLength;
 
      //Pick diffrent sounds
-     sounds.forEach(sound =>{
-        sound.addEventListener('click', function(){
-            song.src = this.getAttribute('data-sound');
-            video.src = this.getAttribute('data-video')
-            checkPlaying(song);
-        })
-     })
+     sounds.forEach(sound => {
+        sound.addEventListener("click", function() {
+          song.src = this.getAttribute("data-sound");
+          video.src = this.getAttribute("data-video");
+          checkPlaying(song);
+        });
+      });
    
 
  //play sound
